@@ -15,18 +15,23 @@ body{
 #header{
     width: 100%;
     height: 100vh;
-    background-image: url(pc-bg.png);
+    background-image: url(pc-bg1.jpg);
 }
 
 .container{
     padding: 10px 10%;
 }
-
+h1{
+  color: #080808;
+}
 nav{
     display: flex;
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
+    margin-top: 80px;
+    margin-right: 100px;
+    padding: 0px 50px;
 }
 
 nav ul li{
@@ -62,7 +67,7 @@ nav ul li a:hover::after{
 }
 
 .header-text span{
-    color:  #ADD8E6;
+    color:  #ff004f;
     font-size: 40px;
 }
 
