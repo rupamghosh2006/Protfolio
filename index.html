@@ -4,9 +4,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Rupam Ghosh - Tech Enthusiast and Engineering Student specializing in C++, Python, AI, and Web Development.">
+    <meta name="keywords"
+        content="Portfolio, Tech Enthusiast, Rupam Ghosh, AI, Machine Learning, Web Development, C++, Python">
+
     <title>Protfolio</title>
     <link rel="StyleSheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 <body>
@@ -15,9 +22,9 @@
             <nav>
                 <ul>
                     <li><a href="#header">Home</a></li>
-                    <li><a href="#about">About</a></li>                  
+                    <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                   
+
                 </ul>
             </nav>
 
@@ -91,29 +98,31 @@
                     <p><i class="fa-solid fa-envelope"></i> rupamgh32@gmail.com</p>
                     <p><i class="fa-solid fa-phone"></i> +918670108063</p>
                     <div class="social-icons">
-                        <a href="https://github.com/rupamghosh2006" target="_main"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://github.com/rupamghosh2006" target="_main"><i
+                                class="fa-brands fa-github"></i></a>
                         <a href="https://wa.me/918670108063" target="_main"><i class="fa-brands fa-whatsapp"></i></a>
-                        <a href="https://www.linkedin.com/in/rupam-ghosh-162593273/" target="_main"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://www.linkedin.com/in/rupam-ghosh-162593273/" target="_main"><i
+                                class="fa-brands fa-linkedin"></i></a>
                         <a href="https://t.me/rupamghosh_2006" target="_main"><i class="fa-brands fa-telegram"></i></a>
                     </div>
                     <a href="cv.pdf" download class="btn btn2">Download CV</a>
                 </div>
                 <div class="contact-right">
                     <form name="submit-to-google-sheet">
-                      <input type="text" name="Name" placeholder="Your Name" required>
-                      <input type="email" name="email" placeholder="Your Email" required>
-                      <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
-                      <button type="submit" class="btn">Submit</button>
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn">Submit</button>
                     </form>
                     <span id="msg"></span>
-                  </div>
-                  
+                </div>
+
             </div>
         </div>
         <div class="copyright">
             <p>Copyright © Rupam Ghosh. Made with <i class="fas fa-heart"></i> by Rupam Ghosh</p>
         </div>
-        
+
     </div>
 
     <script>
@@ -135,24 +144,24 @@
     </script>
 
 
-<script>
-    const scriptURL = 'https://script.google.com/macros/s/AKfycby_3cUZeM7RapicKpdny35Gf8WmktfWVmupNwQ0M1FR0A2yDH_D7nVn7Evz0O4X4CzElg/exec'
-    const form = document.forms['submit-to-google-sheet']
-    const msg = document.getElementById("msg")
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby_3cUZeM7RapicKpdny35Gf8WmktfWVmupNwQ0M1FR0A2yDH_D7nVn7Evz0O4X4CzElg/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
 
-    form.addEventListener('submit', e => {
-      e.preventDefault()
-      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
-        .then(response => {
-            msg.innerHTML = "Message sent successfully."
-            setTimeout(function(){
-                msg.innerHTML = ""
-            },5000)
-            form.reset()
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully."
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
         })
-        .catch(error => console.error('Error!', error.message))
-    })
-  </script>
+    </script>
 </body>
 
 </html>
