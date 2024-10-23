@@ -265,8 +265,7 @@ form .btn {
     margin-top: 10px;
     display: block;
 }
-<<<<<<< Updated upstream
-=======
+
 @media (max-width: 768px) {
   nav {
       flex-direction: column;
@@ -296,9 +295,17 @@ form .btn {
         margin-left: auto;
         margin-right: auto;
     }
+.about-col-2 {
+        padding-top: 30px;
+        /* Adjust padding for about section */
+    }
 
+    /* Sub-title Styling */
+    .sub-title {
+        font-size: 30px;
+        /* Adjust font size for smaller screens */
+    }
   .social-icons a {
       font-size: 24px;
   }
 }
->>>>>>> Stashed changes
