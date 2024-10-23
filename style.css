@@ -278,9 +278,14 @@ form .btn {
       font-size: 24px;
   }
 
+    /* Header Text */
+    .header-text h1 {
+        font-size: 24px;
+    }
   .about-col-1, .about-col-2 {
       flex-basis: 100%;
       text-align: center;
+      padding: 0;
   }
 
   .about-col-1 img {
